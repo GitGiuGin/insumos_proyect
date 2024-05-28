@@ -13,6 +13,10 @@ Route::get('/login/{post}', function($post){
     return "imagen numero {$post}";
 });
 
+Route::get('/pruebas/index.html', function(){
+    return view('pruebas/index.html');
+});
+
 /*Route::get('/login/{post}/{category?}', function($post, $category = null){
     if($category){
         return "imagen numero {$post} de la categoria {$category}";

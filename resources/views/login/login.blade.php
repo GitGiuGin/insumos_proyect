@@ -7,6 +7,8 @@
     <title>Login</title>
 </head>
 <body>
+    <header></header>
     <h2>ESTA PAGINA ESTA EL LOGIN</h2>
+    <footer></footer>
 </body>
 </html>
