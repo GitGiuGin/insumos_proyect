@@ -92,11 +92,23 @@
         </nav>
     </header>
 
-    @yield('content') <!-- esta linea es un contenido variable -->
-
-    @stack('css') <!--Este metodo se puede usar varias veces-->
+    <ul>
+        @foreach ($clientes as $cliente)
+            <li>
+                {{ $cliente->IdCliente}}
+                {{ $cliente->nombre}}
+                {{ $cliente->apellido}}
+                {{ $cliente->tipo_documento}}
+                {{ $cliente->num_documento}}
+                {{ $cliente->direccion}}
+                {{ $cliente->telefono}}
+                {{ $cliente->correo}}
+            </li>
+        @endforeach
+    </ul>
 
     <footer></footer>
 </body>
 
 </html>
+
